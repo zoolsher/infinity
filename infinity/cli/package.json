@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "best mini program framework",
   "bin": "bin/index",
+  "files": [
+    "dist/",
+    "bin/"
+  ],
   "main": "index.js",
   "author": "zoolsher",
   "license": "MIT",

@@ -1,0 +1,19 @@
+{
+  "name": "infinity-build",
+  "version": "0.1.0",
+  "description": "best mini program framework",
+  "main": "index.js",
+  "author": "zoolsher",
+  "license": "MIT",
+  "scripts": {
+    "dev": "../../node_modules/.bin/tsc -p tsconfig.json --watch",
+    "build": "../../node_modules/.bin/tsc -p tsconfig.json",
+    "tslint:fix": "../../node_modules/.bin/tslint --project tsconfig.json --config ../../tslint.json --fix"
+  },
+  "devDependencies": {
+    "@types/webpack": "^4.4.17"
+  },
+  "dependencies": {
+    "webpack": "^4.24.0"
+  }
+}
