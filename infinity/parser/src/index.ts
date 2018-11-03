@@ -100,9 +100,8 @@ export default class Index extends wepy.page {
 `;
 
 const result = parse(data, {
-  attrNodeName: "ZOOLSHER_ZL_INFINITY_ATTR",
-  attributeNamePrefix : "",
+  attrNodeName: 'ZOOLSHER_ZL_INFINITY_ATTR',
+  attributeNamePrefix: '',
   ignoreAttributes: false,
-  textNodeName : "#ZOOLSHER_ZL_INFINITY_TEXT",
+  textNodeName: '#ZOOLSHER_ZL_INFINITY_TEXT',
 });
-debugger;

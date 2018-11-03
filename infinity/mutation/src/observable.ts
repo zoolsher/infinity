@@ -3,7 +3,7 @@ import { Store, StoreOptions } from 'vuex';
 export class DataStore<S> {
   /**
    * Factory
-   * @param option 
+   * @param option
    */
   public static create<S>(option: StoreOptions<S>) {
     const result = new DataStore<S>(option);

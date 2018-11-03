@@ -42,6 +42,4 @@ export class Page {
   public onShareAppMessage() {}
 }
 
-export function pageConnect(p:typeof Page){
-
-}
+export function pageConnect(p: typeof Page) {}

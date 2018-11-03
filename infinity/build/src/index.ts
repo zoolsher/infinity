@@ -16,7 +16,6 @@ export const DEFAULT_CONFIG = {
  */
 export function run(option: any) {
   const context = formatOption(option);
-  
 }
 
 function formatOption(option: any): IRunOption {
