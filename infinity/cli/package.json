@@ -1,5 +1,5 @@
 {
-  "name": "infinity-build",
+  "name": "infinity-cli",
   "version": "0.1.0",
   "description": "best mini program framework",
   "bin": "bin/index",
