@@ -1,0 +1,13 @@
+{
+  "name": "infinity-mutation",
+  "version": "0.1.0",
+  "description": "store i like...",
+  "main": "index.js",
+  "author": {
+    "name": "zoolsher"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "vuex": "^3.0.1"
+  }
+}

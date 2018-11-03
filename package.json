@@ -8,7 +8,7 @@
   "scripts": {
     "init": "yarn upgrade && lerna bootstrap",
     "build": "lerna run build",
-    "dev": "lerna run dev --par",
+    "dev": "lerna run dev --parallel",
     "lint": "yarn run prettier && yarn run tslint",
     "tslint": "lerna run tslint",
     "prettier": "prettier --list-different '**/*.ts'",
