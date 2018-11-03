@@ -1,10 +1,8 @@
-import * as path from 'path';
-import { BasePortal } from './framework/base-portal';
-const program = require('commander');
-const packageJsonPath = path.resolve(__dirname, './../package.json');
-const packageJson = require(packageJsonPath);
+import { BasePortal } from './framework/base-portal'
+const program = require('commander')
+const packageJson = require('../package.json')
 
 export function run(args: any) {
-  program.version(packageJson.version);
-  new BasePortal(program).request(args);
+  program.version(packageJson.version)
+  new BasePortal(program, process).request(args)
 }

@@ -7,13 +7,9 @@
   "author": "zoolsher",
   "license": "MIT",
   "scripts": {
-    "dev": "",
-    "build": ""
-  },
-  "devDependencies": {
-    "lerna": "^3.4.3",
-    "tslint": "^5.11.0",
-    "typescript": "^3.1.6"
+    "tslint:fix": "../../node_modules/.bin/tslint --project tsconfig.json --config ../../tslint.json --fix",
+    "dev": "../../node_modules/.bin/tsc -p tsconfig.json --watch",
+    "build": "../../node_modules/.bin/tsc -p tsconfig.json"
   },
   "dependencies": {
     "commander": "^2.19.0"

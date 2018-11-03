@@ -1,24 +1,35 @@
-export interface IControllerOption {
-  rawArgs: Record<string, string>;
+export interface IProgramOption {
+  rawArgs: Record<string, string>
 }
-export class Controller<T extends IControllerOption> {
-  public static command: string = '';
-  public static description: string = null;
-  public static option: Array<string[]> = [];
-  public formatOptions: T;
-  public constructor(program: any, argsFromCommand: string[]) {
-    this.formatOptions = this.formatOption(program);
+export interface IProcessOption {
+  cwd: string
+}
+export class Controller<T extends IProgramOption, K extends IProcessOption> {
+  public static command: string = ''
+  public static description: string = null
+  public static option: string[][] = []
+  public programOptions: T
+  public processOptions: K
+  public constructor(program: any, process: any, argsFromCommand: string[]) {
+    this.programOptions = this.formatProgramOption(program)
+    this.processOptions = this.formatProcessOption(process)
   }
-  public formatOption(program: any): T {
+
+  public formatProcessOption(process: any): K {
+    return {
+      cwd: process.cwd,
+    } as K
+  }
+  public formatProgramOption(program: any): T {
     // TODO: check rawArgs
     return {
       rawArgs: program.rawArgs,
-    } as T;
+    } as T
   }
   /**
    * 去吧比卡丘。
    */
-  public run(){
-
+  public run() {
+    // TODO: before after
   }
 }

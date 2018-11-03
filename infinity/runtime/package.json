@@ -1,0 +1,20 @@
+{
+  "name": "infinity-runtime",
+  "version": "0.1.0",
+  "description": "best mini program framework",
+  "main": "dist/bundle.js",
+  "author": "zoolsher",
+  "license": "MIT",
+  "scripts": {
+    "tslint:fix": "../../node_modules/.bin/tslint --project tsconfig.json --config ../../tslint.json --fix",
+    "dev": "rollup -c rollup.config.js --watch",
+    "build": "rollup -c rollup.config.js"
+  },
+  "devDependencies": {
+    "rollup": "^0.66.6",
+    "rollup-plugin-typescript": "^1.0.0",
+    "tslib": "^1.9.3",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {}
+}
