@@ -2,7 +2,7 @@ export class Page {
   /**
    * 页面数据
    */
-  public data: any = {}
+  public data: any = {};
   /**
    * 生命周期 - 页面加载
    * @param query 页面入参

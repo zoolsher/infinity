@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "../../node_modules/.bin/tsc -p tsconfig.json --watch",
     "build": "../../node_modules/.bin/tsc -p tsconfig.json",
+    "tslint": "../../node_modules/.bin/tslint --project tsconfig.json --config ../../tslint.json",
     "tslint:fix": "../../node_modules/.bin/tslint --project tsconfig.json --config ../../tslint.json --fix"
   },
   "devDependencies": {

@@ -1,4 +1,2 @@
-import webpack from 'webpack';
-export class Build {
-
-}
+import * as webpack from 'webpack';
+export class Build {}

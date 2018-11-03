@@ -8,7 +8,10 @@
   "scripts": {
     "init": "yarn upgrade && lerna bootstrap",
     "build": "lerna run build",
-    "dev": "lerna run dev",
+    "dev": "lerna run dev --par",
+    "lint": "yarn run prettier && yarn run tslint",
+    "tslint": "lerna run tslint",
+    "prettier": "prettier --list-different '**/*.ts'",
     "lint:fix": "yarn run prettier:fix && yarn run tslint:fix",
     "tslint:fix": "lerna run tslint:fix",
     "prettier:fix": "prettier --write '**/*.ts'"

@@ -6,6 +6,7 @@
   "author": "zoolsher",
   "license": "MIT",
   "scripts": {
+    "tslint": "../../node_modules/.bin/tslint --project tsconfig.json --config ../../tslint.json",
     "tslint:fix": "../../node_modules/.bin/tslint --project tsconfig.json --config ../../tslint.json --fix",
     "dev": "rollup -c rollup.config.js --watch",
     "build": "rollup -c rollup.config.js"

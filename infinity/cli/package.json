@@ -11,6 +11,7 @@
   "author": "zoolsher",
   "license": "MIT",
   "scripts": {
+    "tslint": "../../node_modules/.bin/tslint --project tsconfig.json --config ../../tslint.json",
     "tslint:fix": "../../node_modules/.bin/tslint --project tsconfig.json --config ../../tslint.json --fix",
     "dev": "../../node_modules/.bin/tsc -p tsconfig.json --watch",
     "build": "../../node_modules/.bin/tsc -p tsconfig.json"
